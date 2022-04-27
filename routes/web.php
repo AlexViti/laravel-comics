@@ -20,6 +20,9 @@ Route::get('/', function () {
 $nav = ['characters', 'comics', 'movies', 'tv', 'games', 'collectables', 'videos', 'fans', 'news', 'shop'];
 foreach($nav as $item) {
     Route::get('/'.$item, function () use ($item) {
-        return view('guest.pages.'.$item);
+        $data = [];
+        if($item == 'comics')
+            $data['comics'] = config('comics');
+        return view('guest.pages.'.$item, $data);
     })->name($item);
 }
