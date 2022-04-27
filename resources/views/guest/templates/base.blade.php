@@ -8,11 +8,15 @@
   <!-- Favicon -->
   <link rel="shortcut icon" href="favicon.ico">
 
-  <title>@yield('title')</title>
+  <title>@yield('title') | DC</title>
 
-  <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" href="{{  asset('css/app.css')  }}">
 </head>
 <body>
-
+  <header>
+    @include('guest.partials.header')
+  </header>
+  @yield('content')
+  <script src="{{  asset('js/app.js')  }}"></script>
 </body>
 </html>

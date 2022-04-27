@@ -9,15 +9,7 @@ a {
   text-decoration: inherit;
 }
 
-ul,
-ol {
+// reset list
+ul, ol {
   list-style: none;
 }
-
-header nav ul {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  text-transform: uppercase;
-}
-

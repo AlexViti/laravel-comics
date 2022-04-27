@@ -1,3 +1,7 @@
 @extends('guest.templates.base')
 
-@section('title', 'DC Comics')
+@section('title', 'Welcome to DC')
+
+@section('content')
+
+@endsection
