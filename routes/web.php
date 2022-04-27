@@ -17,6 +17,9 @@ Route::get('/', function () {
     return view('guest.home');
 })->name('home');
 
-Route::get('comics', function () {
-    return view('guest.pages.comics');
-})->name('comics');
+$nav = ['characters', 'comics', 'movies', 'tv', 'games', 'collectables', 'videos', 'fans', 'news', 'shop'];
+foreach($nav as $item) {
+    Route::get('/'.$item, function () use ($item) {
+        return view('guest.pages.'.$item);
+    })->name($item);
+}

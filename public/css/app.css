@@ -51,6 +51,10 @@ header nav ul {
   align-items: center;
 }
 
+header nav ul .active {
+  border-bottom: 2px solid #0282f9;
+}
+
 html {
   font-family: "PT Sans Narrow", "Roboto Condensed", sans-serif;
   color: white;
