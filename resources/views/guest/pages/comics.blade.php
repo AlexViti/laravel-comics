@@ -8,7 +8,7 @@
     <img src="{{ asset('images/jumbotron.jpg') }}" alt="Comics Jumbo">
   </div>
   <div class="container">
-    <h1>Current series</h1>
+    <h2>Current series</h2>
     <div class="wrapper">
       @foreach ($comics as $comic)
         <div class="card">
@@ -19,6 +19,8 @@
         </div>
       @endforeach
     </div>
+    <button>Load more</button>
   </div>
+  @include('guest.partials.mainNav')
 </main>
 @endsection

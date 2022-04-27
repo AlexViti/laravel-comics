@@ -15,6 +15,7 @@ ol {
 }
 
 button {
+  text-transform: inherit;
   border: none;
   background: none;
   cursor: pointer;
@@ -70,6 +71,7 @@ header nav ul .active {
 }
 
 main {
+  text-transform: uppercase;
   background-color: #1c1c1c;
 }
 
@@ -91,7 +93,7 @@ main .container {
   position: relative;
 }
 
-main .container h1 {
+main .container h2 {
   background: #0282f9;
   position: absolute;
   padding: 0.3em 0.8em;
@@ -107,6 +109,10 @@ main .container .wrapper {
   grid-gap: 1.5rem;
 }
 
+main .container .wrapper h3 {
+  font-weight: 400;
+}
+
 main .container .wrapper .thumb {
   width: 100%;
   aspect-ratio: 1/1;
@@ -120,5 +126,27 @@ main .container .wrapper .thumb img {
      object-fit: cover;
   -o-object-position: top center;
      object-position: top center;
+}
+
+main .container button {
+  margin: auto;
+  padding: 0.5em 3em;
+  background: #0282f9;
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 600;
+  display: block;
+  cursor: pointer;
+}
+
+main nav {
+  background: #0282f9;
+  padding: 1rem 0;
+}
+
+main nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
