@@ -1,9 +1,19 @@
 <header>
-  <nav>
+  <div class="top-bar">
+    <div class="container">
+      <div>
+        DC Power Visa&reg;
+      </div>
+      <div>
+        Additional DC sites ▾
+      </div>
+    </div>
+  </div>
+  <nav class="container">
     <ul>
       <li class="logo">
         <a href="{{ route('home') }}">
-          <img src="{{ asset('images/dc-logo.png') }}" alt="DC logo">
+          <img src="{{ asset('images/dc-logo.png') }}" alt="DC logo" height="81" width="81">
         </a>
       </li>
       <li>
