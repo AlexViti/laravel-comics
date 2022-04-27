@@ -13,3 +13,10 @@ a {
 ul, ol {
   list-style: none;
 }
+
+// reset button
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}

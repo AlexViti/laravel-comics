@@ -55,6 +55,16 @@
         {{-- <a href="{{ route('shop') }}">shop</a> --}}
         <a href="#">shop</a>
       </li>
+      <div class="search-bar">
+        <form>
+          <input type="text" name="query" placeholder="Search">
+          <button type="submit">
+            <span class="material-symbols-outlined">
+              search
+            </span>
+          </button>
+        </form>
+      </div>
     </ul>
   </nav>
 </header>
