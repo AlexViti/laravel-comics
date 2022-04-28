@@ -14,6 +14,8 @@ ul, ol {
 }
 
 button {
+  color: inherit;
+  font-size: inherit;
   text-transform: inherit;
   border: none;
   background: none;
@@ -32,6 +34,12 @@ html {
 
 .material-symbols-outlined {
   font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+}
+
+.btn {
+  padding: 1em;
+  text-transform: uppercase;
+  font-family: "Roboto Condensed", sans-serif;
 }
 
 header {
@@ -112,13 +120,12 @@ main .container .wrapper .thumb img {
   -o-object-position: top center;
      object-position: top center;
 }
-main .container button {
+main .container .btn {
   margin: 2rem auto;
   padding: 0.5em 3em;
   background: #0282f9;
   color: #fff;
-  font-size: 0.9rem;
-  font-weight: 600;
+  font-size: 0.9em;
   display: block;
   cursor: pointer;
 }
@@ -128,33 +135,51 @@ main nav {
 }
 main nav ul {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
-main nav ul li img {
-  max-height: 80px;
-  max-width: 80px;
+main nav ul li {
+  flex-grow: 1;
+}
+main nav ul li a {
+  display: flex;
+  align-items: center;
+}
+main nav ul li a img {
+  max-height: 50px;
+  max-width: 50px;
+  margin-right: 0.5rem;
 }
 
-footer {
+footer nav {
   background: url("../images/footer-bg.jpg") no-repeat center center;
   background-size: cover;
 }
-footer nav {
+footer nav .container {
   display: flex;
 }
-footer nav > ul {
+footer nav .container > ul {
   width: 40%;
   display: flex;
   flex-wrap: wrap;
   gap: 0 3rem;
 }
-footer nav > ul h4 {
+footer nav .container > ul h4 {
   font-size: 1.5em;
   text-transform: uppercase;
+}
+footer nav .container > ul a {
+  color: #959595;
 }
 footer .bg-logo {
   background: url("../images/dc-logo-bg.png") no-repeat center right;
   background-size: 70%;
   flex-grow: 1;
+}
+footer .footer-bottom {
+  background: #303030;
+}
+footer .footer-bottom .btn {
+  font-weight: 500;
+  border: 2px solid #0282f9;
 }

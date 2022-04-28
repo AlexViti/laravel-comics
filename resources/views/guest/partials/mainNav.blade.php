@@ -29,7 +29,7 @@ $links = [
       <li>
         <a href="#">
           <img src="{{ asset('images/' . $link['img']) }}" alt="{{ $link['text'] }}">
-          <h4>{{ $link['text'] }}</h4>
+          <span>{{ $link['text'] }}</span>
         </a>
       </li>
     @endforeach

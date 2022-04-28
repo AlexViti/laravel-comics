@@ -52,14 +52,13 @@ main {
       }
     }
 
-    button {
+    .btn {
       margin: 2rem auto;
       padding: .5em 3em;
       background: $primary;
 
       color: #fff;
-      font-size: .9rem;
-      font-weight: 600;
+      font-size: .9em;
 
       display: block;
 
@@ -73,13 +72,20 @@ main {
 
     ul {
       display: flex;
-      justify-content: space-between;
+      justify-content: space-around;
       align-items: center;
 
       li {
-        img {
-          max-height: 80px;
-          max-width: 80px;
+        flex-grow: 1;
+        a {
+          display: flex;
+          align-items: center;
+
+          img {
+            max-height: 50px;
+            max-width: 50px;
+            margin-right: .5rem;
+          }
         }
       }
     }

@@ -33,7 +33,7 @@
       </li>
       @foreach ($nav as $item)
         <li>
-          <a class="{{ Request::is($item) ? 'active' : '' }}" href="{{ route($item) }}">{{ $item }}</a>
+          <a class="{{ (explode('/', \Request::path())[0] == $item || \Request::is($item)) ? 'active' : '' }}" href="{{ route($item) }}">{{ $item }}</a>
         </li>
       @endforeach
       <div class="search-bar">

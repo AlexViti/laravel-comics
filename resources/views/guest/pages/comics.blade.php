@@ -19,7 +19,7 @@
         </div>
       @endforeach
     </div>
-    <button>Load more</button>
+    <button class="btn">Load more</button>
   </div>
   @include('guest.partials.mainNav')
 </main>

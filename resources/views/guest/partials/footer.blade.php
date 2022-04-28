@@ -40,23 +40,30 @@ $footer_nav = [
 @endphp
 
 <footer>
-<nav class="container">
-  <ul>
-    @foreach ($footer_nav as $title => $links)
-      <li>
-        <h4>{{ $title }}</h4>
-        <ul>
-          @foreach ($links as $label => $link)
-            @if ($title === 'DC comics')
-              <li><a href="{{ route($link) }}">{{ $label }}</a></li>
-              @else
-                <li><a href="{{ $link }}">{{ $label }}</a></li>
-            @endif
-          @endforeach
-        </ul>
-      </li>
-    @endforeach
-  </ul>
-  <div class="bg-logo"></div>
-</nav>
+  <nav>
+    <div class="container">
+      <ul>
+        @foreach ($footer_nav as $title => $links)
+          <li>
+            <h4>{{ $title }}</h4>
+            <ul>
+              @foreach ($links as $label => $link)
+                @if ($title === 'DC comics')
+                  <li><a href="{{ route($link) }}">{{ $label }}</a></li>
+                  @else
+                    <li><a href="{{ $link }}">{{ $label }}</a></li>
+                @endif
+              @endforeach
+            </ul>
+          </li>
+        @endforeach
+      </ul>
+      <div class="bg-logo"></div>
+    </div>
+  </nav>
+  <div class="footer-bottom">
+    <div class="container">
+      <button class="btn">Sign-up now!</button>
+    </div>
+  </div>
 </footer>
