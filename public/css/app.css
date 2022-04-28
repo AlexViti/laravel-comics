@@ -129,7 +129,7 @@ main .container .wrapper .thumb img {
 }
 
 main .container button {
-  margin: auto;
+  margin: 2rem auto;
   padding: 0.5em 3em;
   background: #0282f9;
   color: #fff;
@@ -148,5 +148,27 @@ main nav ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+main nav ul li img {
+  max-height: 80px;
+  max-width: 80px;
+}
+
+footer {
+  background: url("/images/footer-bg.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+footer nav > ul {
+  width: 33%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 3rem;
+}
+
+footer nav > ul h4 {
+  font-size: 1.5em;
+  text-transform: uppercase;
 }
 

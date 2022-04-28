@@ -53,7 +53,7 @@ main {
     }
 
     button {
-      margin: auto;
+      margin: 2rem auto;
       padding: .5em 3em;
       background: $primary;
 
@@ -75,6 +75,13 @@ main {
       display: flex;
       justify-content: space-between;
       align-items: center;
+
+      li {
+        img {
+          max-height: 80px;
+          max-width: 80px;
+        }
+      }
     }
   }
 }

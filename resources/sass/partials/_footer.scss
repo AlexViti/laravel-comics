@@ -1,0 +1,18 @@
+footer {
+  background: url("/images/footer-bg.jpg") no-repeat center center;
+  background-size: cover;
+
+  nav {
+    & > ul {
+      width: 33%;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0 3rem;
+
+      h4 {
+        font-size: 1.5em;
+        text-transform: uppercase;
+      }
+    }
+  }
+}

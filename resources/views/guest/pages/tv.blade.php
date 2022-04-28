@@ -4,7 +4,7 @@
 
 @section('content')
 <main style="text-align: center">
-  <h1 style="color: black">TV placeholder, press on comics</h1>
+  <h1>TV placeholder, press on comics</h1>
 </main>
 @endsection
 
