@@ -57,8 +57,6 @@ $footer_nav = [
       </li>
     @endforeach
   </ul>
-  <div class="bg-logo">
-
-  </div>
+  <div class="bg-logo"></div>
 </nav>
 </footer>
